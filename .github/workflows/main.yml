@@ -51,7 +51,7 @@ jobs:
           git clone https://github.com/Shinhubzhu/kernelsu_pixel5
           mkdir android-kernel && cd android-kernel
           echo 'pulling kernel source'
-          repo init -u https://android.googlesource.com/kernel/manifest -b android-msm-redbull-4.19-android13-qpr3
+          repo init -u https://android.googlesource.com/kernel/manifest -b android-msm-redbull-4.19-android13-qpr2
           repo sync
           cd private/msm-google
           echo 'cloning kernelsu'
@@ -69,7 +69,7 @@ jobs:
       - name: Build
         run: |
           cd /home/runner/android-kernel
-          ./build_redbull-gki.sh
+          ./build_redbull.sh
  
       - name: Setting up AnyKenrel3
         run: |
