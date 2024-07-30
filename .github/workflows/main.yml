@@ -72,8 +72,8 @@ jobs:
       - name: Build
         run: |
           cd /home/runner/android-kernel
-          cat /home/runner/android-kernel/private/msm-google/drivers/Makefile
-          ./build_redbull.sh
+          # ./build_redbull.sh
+          ./build_redbull-gki.sh
  
       - name: Setting up AnyKenrel3
         run: |
